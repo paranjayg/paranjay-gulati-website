@@ -1,0 +1,181 @@
+/* Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    color: #1A1A1A;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Container Styling */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 100px 20px 80px 20px;
+}
+
+/* Main Identity Section */
+h1 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #1A1A1A;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #1A1A1A;
+}
+
+/* Introduction Section */
+.intro-section {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.intro-text {
+    flex: 0 0 70%;
+}
+
+.intro-text p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.intro-text p:last-child {
+    margin-bottom: 0;
+}
+
+.intro-image {
+    flex: 0 0 30%;
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.image-caption {
+    font-size: 13px;
+    font-style: italic;
+    color: #888888;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Section Headings */
+.content-section {
+    margin-top: 80px;
+}
+
+.section-heading {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin-bottom: 24px;
+}
+
+.section-heading span {
+    display: inline-block;
+    border-bottom: 2px solid #1A1A1A;
+    padding-bottom: 2px;
+}
+
+/* Investment List */
+.investment-list {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.investment-list strong {
+    font-weight: 600;
+}
+
+/* Writing Section */
+.writing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.writing-column h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1A1A1A;
+}
+
+.writing-column ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.writing-column ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.writing-column ul li a {
+    color: #0D0D0D;
+    text-decoration: none;
+}
+
+.writing-column ul li a:hover {
+    text-decoration: underline;
+    color: #1A1A1A;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .intro-text {
+        flex: 1 1 100%;
+    }
+
+    .intro-image {
+        flex: 1 1 100%;
+    }
+
+    .writing-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .content-section {
+        margin-top: 60px;
+    }
+    
+    h2 {
+        margin-bottom: 32px;
+    }
+}
+

@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  width: 100%;
+}
+
+a {
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 80px 24px 120px;
+}
+
+.identity {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 16px;
+  margin-bottom: 40px;
+}
+
+.main-title {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 40px;
+}
+
+.intro-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.intro-text {
+  flex: 0 0 70%;
+}
+
+.intro-text p {
+  margin: 0 0 16px;
+}
+
+.intro-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.intro-image {
+  flex: 0 0 30%;
+}
+
+.image-wrapper {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+}
+
+.image-wrapper img {
+  width: 100%;
+  display: block;
+}
+
+.image-caption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #7a7a7a;
+  font-style: italic;
+}
+
+.content-section {
+  margin-top: 60px;
+}
+
+.section-heading {
+  margin-bottom: 20px;
+}
+
+.section-heading span {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 6px;
+}
+
+.investing-text {
+  margin: 0;
+}
+
+.investing-text strong {
+  font-weight: 600;
+}
+
+.writing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.writing-column h3 {
+  font-size: 16px;
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+
+.writing-column ul {
+  margin: 0;
+  padding-left: 18px;
+  list-style: disc;
+}
+
+.writing-column li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 56px 20px 80px;
+  }
+
+  .main-title {
+    font-size: 48px;
+  }
+
+  .intro-section {
+    flex-direction: column;
+  }
+
+  .intro-text,
+  .intro-image {
+    flex: 0 0 100%;
+  }
+
+  .writing-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
